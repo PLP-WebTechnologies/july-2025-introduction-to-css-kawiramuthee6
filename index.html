@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A Gender-Based Violence reporting system.">
+        <meta name="author" content="Sharon K">
+        <title>Gender-Based Violence Reporting System</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>This is a GBV Reporting System.</h1>
+            <p class="p-css">We care, we listen, we provide help and we feel you. <br> 
+                Do not be afraid. Reach out to us about you, your neighbor, your friend, that stranger on the road, because it all starts with you. <br>
+                This is completely anonymous. Give us the details and leave the rest to us. <br> BE A HERO TODAY!</p>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#who-can-report">Who Can Report</a></li>
+                    <li><a href="#gbv-types">GBV Types</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                    <li><a href="#report-section">Report Incident</a></li>
+                </ul>
+            </nav>
+            <img src="https://images.pexels.com/photos/4262424/pexels-photo-4262424.jpeg" alt="peace and love picture" width="400" height="300">
+        </header>
+        <main>
+            <div class="reporting">
+                <section id="who-can-report">
+                    <h2>Who can Report?</h2>
+                    <dl>
+                        <dt>Men;</dt>
+                        <dd>Any male Individual, young or old.</dd>
+                        <dt>Women;</dt>
+                        <dd>Any female Individual, young or old.</dd>
+                        <dt>Children;</dt>
+                        <dd>minors, infants, etc.</dd>
+                        <dt>The Old;</dt>
+                        <dd>The old.</dd>
+                        <dt>Generally, any member of the community;</dt>
+                        <dd>Anyone on the community.</dd>
+                    </dl>
+                </section>
+            </div>
+            <section id="gbv-types">
+                <h2>The most common types of GBV to report include;</h2>
+                <ol type="a">
+                    <li>Physical Violence.</li>
+                    <li>Sexual Violence.</li>
+                    <li>Stalking.</li>
+                    <li>FGM.</li>
+                    <li>Economical Violence.</li>
+                </ol>
+            </section>
+            <section id="contacts">
+                <h2>Contacts Near You</h2>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Town</th>
+                            <th>Phone Number</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Nairobi</td>
+                            <td>1100</td>
+                        </tr>
+                        <tr>
+                            <td>Kisumu</td>
+                            <td>1200</td>
+                        </tr>
+                        <tr>
+                            <td>Mombasa</td>
+                            <td>1300</td>
+                        </tr>
+                        <tr>
+                            <td>Meru</td>
+                            <td>1400</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            
+                <section id="report-section">
+                    <h2>Report a GBV Incident Here</h2>
+                    <form action="https://example.com/submit" method="post">
+                        <fieldset>
+                            <legend>Your Information</legend>
+                            <label for="name">Full Name:</label>
+                            <input type="text" id="name" name="name" required autocomplete="name" placeholder="Enter your full name">
+                            <br><br>
+                            <label for="age">Age:</label>
+                            <input type="number" id="age" name="age">
+                            <br><br>
+                            <label for="gender">Gender:</label>
+                            <input type="radio" id="male" name="gender" value="Male"> <label for="male">Male</label>
+                            <input type="radio" id="female" name="gender" value="Female"> <label for="female">Female</label>
+                            <br><br>
+                            <label for="contact">Contact Information:</label>
+                            <input type="tel" id="contact" name="contact" minlength="10" maxlength="15" required autocomplete="tel" placeholder="Enter your phone number">
+                            <br><br>
+                            <legend>Your Location</legend>
+                            <label for="county">County:</label>
+                            <select id="county" name="county">
+                                <option value="Nairobi">Nairobi</option>
+                                <option value="Nakuru">Nakuru</option>
+                                <option value="Meru">Meru</option>
+                                <option value="Mombasa">Mombasa</option>
+                                <option value="Kisumu">Kisumu</option>
+                                <option value="Other">Other</option>
+                            </select>
+                            <br><br>
+                        </fieldset>
+                        <fieldset>
+                            <label for="message">Describe the Incident:</label>
+                            <textarea id="message" name="message" rows="4" cols="50" minlength="50" maxlength="500" title="message must be between 50 and 500 characters" placeholder="Describe the Incident"></textarea>
+                            <br><br>
+                            <p>
+                                <button type="submit"> Send Report</button>
+                            </p>
+                        </fieldset>
+                    </form>
+                </section>
+            
+        </main>
+        <h2>Happy people, happy life, healthy life.</h2>
+        <video width="650" height="360" controls>
+            <source src="https://videos.pexels.com/video-files/3197864/3197864-hd_1920_1080_25fps.mp4" type="video/mp4">
+        </video>
+    </body>
+</html>
